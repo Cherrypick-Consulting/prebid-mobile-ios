@@ -36,7 +36,10 @@ let package = Package(
         .target(
             name: "PrebidMobile",
             path: "PrebidMobile",
-            sources: ["Swift"]
+            sources: ["Swift"],
+            swiftSettings: [
+                .unsafeFlags(["-enable-library-evolution", "-emit-module-interface"])
+            ]
         ),
         .target(
             name: "__PrebidMobileInternal",
