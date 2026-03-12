@@ -12,6 +12,7 @@ let package = Package(
     products: [
         .library(
             name: "PrebidMobile",
+            type: .dynamic,
             targets: ["PrebidMobile", "__PrebidMobileInternal"]
         ),
         .library(
